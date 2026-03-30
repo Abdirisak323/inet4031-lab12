@@ -40,3 +40,7 @@ The application code and scaffolding are provided. Your job is to complete the D
 
 <!-- Describe how to confirm the stack is running correctly.
      Reference the check script and what a passing run looks like. -->
+
+# Feedback (Optional)
+
+<!-- Do you have any feedback you would like to give us after completing this lab? What are some things you enjoyed? What about others that you felt was lackluster? Or maybe there was something that we missed that you'd love for us to touch on! This will help us improve the INET 4031 lab experience. We appreciate everything we can get!  -->

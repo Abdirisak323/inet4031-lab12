@@ -1,46 +1,28 @@
 # Docker Lab: Containerizing a Three-Tier Application
 **INET 4031 - Introductions to Systems**
 
-This lab introduces Docker and Docker Compose by having you containerize a
-real, multi-service application. You will package three components: Apache,
-Flask, and MariaDB. These will be packaged into separate containers and wired together so they function as a complete application.
+This lab demonstrates how to containerize a three-tier application using Docker and Docker Compose. The application uses three services: Apache, Flask, and MariaDB. Each service runs in its own container, and Docker Compose is used to connect and manage them as one complete stack.
 
-The application code and scaffolding are provided. Your job is to complete the Dockerfiles, verify the stack runs correctly, and document your work below.
+## Project Overview
 
-> **Directions and explanations for this lab are on the repository Wiki.**
-> Refer to the Wiki pages for step-by-step instructions.
+This project is a ticket dashboard application. Apache serves the web frontend, Flask handles the backend logic and API, and MariaDB stores the ticket data. The goal of the lab was to complete the Dockerfiles, bring the stack up correctly, and verify that all services work together.
 
----
+A user interacts with the application through a web browser. Apache receives the request, forwards it to Flask when needed, and Flask communicates with MariaDB to get the data.
 
-*The sections below are for you to fill out. Replace each placeholder with your own content before submitting. Having a detailed README is the best practice for showing your work in future GitHub repositories.*
+## Prerequisites
 
----
+Before running this lab, the following must be installed on the VM:
 
-# Project Overview
+- Docker
+- Docker Compose
+- Git
 
-<!-- Briefly describe what this application does in your own words.
-     What problem does it solve? What does a user interact with? -->
+A `.env` file must also be created from `.env.example` before starting the stack.
 
-# Prerequisites
+## Getting Started
 
-<!-- List what needs to be installed or configured on the VM before this lab
-     will work. Include Docker, Docker Compose, and anything else required. -->
+Clone the repository and move into the project folder:
 
-# Getting Started
-
-<!-- Explain how a new teammate would bring this stack up from a fresh clone.
-     Walk through every command they need to run, in order. -->
-
-# Configuration
-
-<!-- Explain the .env file: what it is, what variables it contains,
-     and what a teammate needs to provide that is not in this repository. -->
-
-# Verification
-
-<!-- Describe how to confirm the stack is running correctly.
-     Reference the check script and what a passing run looks like. -->
-
-# Feedback (Optional)
-
-<!-- Do you have any feedback you would like to give us after completing this lab? What are some things you enjoyed? What about others that you felt was lackluster? Or maybe there was something that we missed that you'd love for us to touch on! This will help us improve the INET 4031 lab experience. We appreciate everything we can get!  -->
+```bash
+git clone https://github.com/Abdirisak323/inet4031-lab12.git
+cd inet4031-lab12
